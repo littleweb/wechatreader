@@ -85,7 +85,7 @@ Ext.define('wechatReader.controller.readerlist', {
             //获取数据
             get: {
                 tap: function(){
-                    var url = this.config.pageUrl;
+                    var url = this.getUrl()._value;
                     var _storeList = Ext.getStore("readerlist");
                     var _storeDays = Ext.getStore("dayline");
 
