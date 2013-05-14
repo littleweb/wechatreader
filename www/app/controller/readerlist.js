@@ -77,7 +77,7 @@ Ext.define('wechatReader.controller.readerlist', {
                     var _storeList = Ext.getStore("readerlist");
                     //console.log(_storeList.first().data);
                     _storeList.filter("date", window.Util.getDay(0));
-                    console.log(_storeList);
+                    //console.log(_storeList);
                     this.getList().setStore(_storeList);
                     this.syncData({title: "今天"});
                 }
